@@ -1,0 +1,3 @@
+pwd
+ls
+docker build -t peter .
