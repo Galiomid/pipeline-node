@@ -5,10 +5,6 @@ pipeline {
         stage('dockerfile') {
             steps {
                 echo 'Hello World'~
-		pwd
-		ls
-		docker build -t peter .
-
             }
 	}
     }
