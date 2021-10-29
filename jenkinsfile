@@ -1,3 +1,15 @@
-pwd
-ls
-docker build -t peter .
+pipeline {
+    agent any
+
+    stages {
+        stage('dockerfile') {
+            steps {
+                echo 'Hello World'~
+		pwd
+		ls
+		docker build -t peter .
+
+            }
+	}
+    }
+}
